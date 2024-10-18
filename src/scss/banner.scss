@@ -1,0 +1,51 @@
+@use 'variable.scss' as *;
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+    background-color: #F8F8F8;
+    border: 0.8px solid #DBDBDB;
+    border-radius: 8px;
+    max-width: 162px;
+
+    @media (min-width: $breakpoint-desktop) {
+        max-width: 264px;
+        padding: 16px;
+        gap: 16px;
+    }
+}
+
+.banner__message {
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+.banner__message__title {
+    font-family: Nunito;
+    font-weight: 700;
+    line-height: 17px;
+    font-size: 12px;
+    text-align: center;
+    color: #333333;
+    @media (min-width: $breakpoint-desktop) {
+        line-height: 26px;
+        font-size: 20px;
+    }
+}
+
+.banner__message__subtitle {
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    color: #333333;
+
+    @media (min-width: $breakpoint-desktop) {
+        line-height: 22px;
+        font-size: 16px;
+    }
+}

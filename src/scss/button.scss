@@ -1,0 +1,20 @@
+@use 'variable.scss' as *;
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-family: Nunito;
+    border: none;
+    @media (min-width: $breakpoint-desktop) {
+        padding: 8px 16px;
+    }
+}
+
+.button--state-success {
+    background: #7AB800;
+}
+
+.button--state-danger {
+    background: #CC292B;
+}
