@@ -78,10 +78,24 @@ This will generate minified CSS and JavaScript files in the `dist/` folder.
 - **SCSS**: A CSS preprocessor that allows the use of variables, nested rules, and more.
 - **Webpack**: A module bundler that compiles and bundles JavaScript and SCSS files.
 
-## 🛠️ Deploy
+## 🛠️ Deploy Manualy
 
-```bash
-    npm run build
-    npm run deploy
-```
+To manually deploy the application, follow the steps below:
 
+1. Go to your repository settings on GitHub.
+2. In the **"Pages"** section, set the gh-pages branch as the source.
+3. Run the following scripts:
+
+    ```bash
+        npm run build
+        npm run deploy
+    ```
+
+## Github action Deployment
+
+To automate the deployment process using GitHub Actions, follow the steps below:
+
+1. Using the already created workflow file: .github/workflows/webpack.yml.
+2. Go to your repository settings on GitHub.
+3. In the **"Pages"** section, set the gh-pages branch as the source.
+4. Now, whenever you push to the main branch, GitHub Actions will run the workflow that builds the application and automatically deploys it to GitHub Pages.
