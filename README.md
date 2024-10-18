@@ -78,3 +78,10 @@ This will generate minified CSS and JavaScript files in the `dist/` folder.
 - **SCSS**: A CSS preprocessor that allows the use of variables, nested rules, and more.
 - **Webpack**: A module bundler that compiles and bundles JavaScript and SCSS files.
 
+## 🛠️ Deploy
+
+```bash
+    npm run build
+    npm run deploy
+```
+
